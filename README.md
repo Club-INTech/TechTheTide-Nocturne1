@@ -8,8 +8,10 @@ Ce projet permet de manipuler rapidement des moteurs Dynamixel XL430 avec un Tee
 > Si votre Linux se plaint que le fichier n'est pas exécutable, rendez le exécutable: `chmod u+x setup.sh`
 
 * Ouvrez le projet dans CLion (Open):
+
 ![Ouverture du projet](screenshots/open.png)
 * Sélectionnez le dossier du projet et cliquez sur OK:
+
 ![Sélection du projet](screenshots/select.png)
 
 # Coder
