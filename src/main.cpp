@@ -12,10 +12,11 @@
  * Pour avoir plusieurs moteurs, il suffit de les connecter en série avec le même câble. Dans le code, il faut
  * créer un nouveau moteur (cf ligne avec '// création du moteur dans le code')
  */
-float Angle = 10;
+//float Angle = 10;
 void setup() {
-    Serial.begin(9600);
+    //Serial.begin(9600);
     DynamixelManager* manager = new DynamixelManager(D2, D2); // Manageur qui permet de communiquer avec les XL
+    changeID(manager);
     DynamixelMotor* motor1 = manager->createMotor(1 /* ID du XL */, XL430GeneratorFunction); // XL avec l'ID 1
     //DynamixelMotor* motor2 = manager->createMotor(2 /* ID du XL */, XL430GeneratorFunction); // XL avec l'ID 2
 
@@ -33,6 +34,7 @@ void setup() {
         motor1->changeLED(toto);
     toto = !toto;}
 */
+/*
     while(true) {
         motor1->setGoalAngle(90.0f); // fais aller le moteur 1 à 90°
         // motor2->setGoalAngle(270.0f); // fais aller le moteur 2 à 270°
@@ -44,7 +46,9 @@ void setup() {
         //motor2->setGoalAngle(90.0f); // fais aller le moteur 2 à 90°
         delay(500); // 500ms d'attente
     }
+*/
 }
+
 void loop(){
 
 }
